@@ -1,0 +1,93 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// Global rules
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background-color: hsl(185, 75%, 39%);
+}
+// Variables
+
+
+// Style
+.card-content{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .card-box{
+    background: #fff;
+    border-radius: 15px;
+    .card-box-header{
+      height: 150px;
+      background: url('../images/bg-pattern-card.svg') no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      img{
+        border-radius: 50%;
+        width: 108px;
+        height: 108px;
+        border: 7px solid #fff;
+        position: absolute;
+        bottom: -54px;
+      }
+    }
+    .card-box-body {
+      text-align: center;
+      padding: 20% 0 25px;
+      h1{
+        margin-bottom: 10px;
+        font-size: 25px;
+        span{
+          color: hsl(0, 0%, 59%);
+          font-weight: 400;
+        }
+      }
+      span{
+        color: hsl(0, 0%, 59%);
+      }
+    }
+
+    .card-box-footer{
+      padding: 30px 20px;
+      border-top: 1px solid hsl(0, 0%, 59%);
+      ul{
+        list-style: none;
+        text-align: center;
+        li{
+          display: inline-block;
+          padding: 0 20px;
+          h4{
+            padding-bottom: 3px;
+            font-size: 20px;
+            font-weight: 700;
+
+          }
+          span{
+            display: block;
+            color: hsl(0, 0%, 59%);
+            letter-spacing: 1px;
+
+          }
+          :nth-of-type(2){
+            padding: 0 25px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+// Layout
+
