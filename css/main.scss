@@ -11,11 +11,33 @@ body{
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 18px;
   background-color: hsl(185, 75%, 39%);
+  color: hsl(0, 11%, 12%);
+  overflow: hidden;
 }
-// Variables
 
 
 // Style
+.container{
+  .circle-top{
+    position: absolute;
+    transform: translate(-33vw, -50vh);
+    z-index: -1;
+    width: 77% !important;
+    img{
+      width: 100%;
+    }
+  }
+  .circle-bottom {
+    position: absolute;
+    transform: translate(43vw, 60vh);
+    z-index: -1;
+    width: 77% !important;
+    img {
+      width: 100%;
+    }
+  }
+}
+
 .card-content{
   height: 100vh;
   display: flex;
@@ -49,18 +71,18 @@ body{
         margin-bottom: 10px;
         font-size: 25px;
         span{
-          color: hsl(0, 0%, 59%);
+          // color: hsl(0, 0%, 59%);
           font-weight: 400;
         }
       }
       span{
-        color: hsl(0, 0%, 59%);
+        // color: hsl(0, 0%, 59%);
       }
     }
 
     .card-box-footer{
       padding: 30px 20px;
-      border-top: 1px solid hsl(0, 0%, 59%);
+      border-top: 1px solid hsla(0, 3%, 86%, 0.808);
       ul{
         list-style: none;
         text-align: center;
@@ -75,7 +97,7 @@ body{
           }
           span{
             display: block;
-            color: hsl(0, 0%, 59%);
+            // color: hsl(0, 0%, 59%);
             letter-spacing: 1px;
 
           }
@@ -89,5 +111,35 @@ body{
   }
 }
 
-// Layout
-
+// Mobile Layout
+@media (max-width: 375px) {
+  // Style
+.container{
+  .circle-top{
+    position: absolute;
+    -webkit-transform: translate(-10vw, -20vh);
+    -moz-transform: translate(-10vw, -20vh);
+    -ms-transform: translate(-10vw, -20vh);
+    -o-transform: translate(-10vw, -20vh);
+    transform: translate(-10vw, -20vh);
+    z-index: -1;
+    width: 77% !important;
+    img{
+      width: 100%;
+    }
+  }
+  .circle-bottom {
+    position: absolute;
+    transform: translate(43vw, 60vh);
+    -webkit-transform: translate(43vw, 60vh);
+    -moz-transform: translate(43vw, 60vh);
+    -ms-transform: translate(43vw, 60vh);
+    -o-transform: translate(43vw, 60vh);
+    z-index: -1;
+    width: 77% !important;
+    img{
+      width: 100%;
+    }
+  }
+}
+}
