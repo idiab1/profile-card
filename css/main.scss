@@ -112,34 +112,70 @@ body{
 }
 
 // Mobile Layout
-@media (max-width: 375px) {
+@media (max-width: 375px){
   // Style
-.container{
-  .circle-top{
-    position: absolute;
-    -webkit-transform: translate(-10vw, -20vh);
-    -moz-transform: translate(-10vw, -20vh);
-    -ms-transform: translate(-10vw, -20vh);
-    -o-transform: translate(-10vw, -20vh);
-    transform: translate(-10vw, -20vh);
-    z-index: -1;
-    width: 77% !important;
-    img{
-      width: 100%;
+  .container{
+    .circle-top{
+      position: absolute;
+      -webkit-transform: translate(-58vw, -9vh);
+      -moz-transform: translate(-58vw, -9vh);
+      -ms-transform: translate(-58vw, -9vh);
+      -o-transform: translate(-58vw, -9vh);
+      transform: translate(-58vw, -9vh);
+      z-index: -1;
+      width: 100% !important;
+      img{
+        width: 100%;
+      }
+    }
+    .circle-bottom {
+      position: absolute;
+      transform: translate(60vw, 58vh);
+      -webkit-transform: translate(60vw, 58vh);
+      -moz-transform: translate(60vw, 58vh);
+      -ms-transform: translate(60vw, 58vh);
+      -o-transform: translate(60vw, 58vh);
+      z-index: -1;
+      width: 100% !important;
+      img{
+        width: 100%;
+      }
     }
   }
-  .circle-bottom {
-    position: absolute;
-    transform: translate(43vw, 60vh);
-    -webkit-transform: translate(43vw, 60vh);
-    -moz-transform: translate(43vw, 60vh);
-    -ms-transform: translate(43vw, 60vh);
-    -o-transform: translate(43vw, 60vh);
-    z-index: -1;
-    width: 77% !important;
-    img{
-      width: 100%;
+  .card-content {
+    .card-box {
+      width: 300px;
+      .card-box-body {
+        padding: 25% 0 25px;
+      }
+      .card-box-footer {
+          padding: 25px 12px;
+        ul {
+          li {
+            display: inline-block;
+            padding: 0 10px;
+
+            h4 {
+              padding-bottom: 3px;
+              font-size: 20px;
+              font-weight: 700;
+
+            }
+
+            span {
+              display: block;
+              // color: hsl(0, 0%, 59%);
+              letter-spacing: 1px;
+
+            }
+
+            :nth-of-type(2) {
+              padding: 0 10px;
+            }
+
+          }
+        }
+      }
     }
   }
-}
 }
