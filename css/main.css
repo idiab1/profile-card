@@ -96,7 +96,7 @@ body {
   padding: 0 25px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 1199.98px) {
   .container .circle-top {
     position: absolute;
     -webkit-transform: translate(-58vw, -9vh);
@@ -124,8 +124,14 @@ body {
     width: 100%;
   }
 
+  .card-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .card-content .card-box {
-    width: 300px;
+    width: 315px;
   }
   .card-content .card-box .card-box-body {
     padding: 25% 0 25px;

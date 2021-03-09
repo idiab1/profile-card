@@ -112,7 +112,7 @@ body{
 }
 
 // Mobile Layout
-@media (max-width: 375px){
+@media (min-width: 375px) and (max-width: 1199.98px) {
   // Style
   .container{
     .circle-top{
@@ -143,8 +143,12 @@ body{
     }
   }
   .card-content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .card-box {
-      width: 300px;
+      width: 315px;
       .card-box-body {
         padding: 25% 0 25px;
       }
@@ -154,21 +158,17 @@ body{
           li {
             display: inline-block;
             padding: 0 10px;
-
             h4 {
               padding-bottom: 3px;
               font-size: 20px;
               font-weight: 700;
-
             }
-
             span {
               display: block;
               // color: hsl(0, 0%, 59%);
               letter-spacing: 1px;
 
             }
-
             :nth-of-type(2) {
               padding: 0 10px;
             }
@@ -178,4 +178,6 @@ body{
       }
     }
   }
+
+  
 }
