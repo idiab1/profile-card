@@ -72,7 +72,7 @@ body {
   font-weight: 400;
 }
 .card-content .card-box .card-box-footer {
-  padding: 30px 20px;
+  padding: 30px 15px;
   border-top: 1px solid rgba(220, 218, 218, 0.808);
 }
 .card-content .card-box .card-box-footer ul {
@@ -81,7 +81,7 @@ body {
 }
 .card-content .card-box .card-box-footer ul li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 17px;
 }
 .card-content .card-box .card-box-footer ul li h4 {
   padding-bottom: 3px;
